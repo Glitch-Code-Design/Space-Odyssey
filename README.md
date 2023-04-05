@@ -6,4 +6,4 @@ Credits: <br>
 
 [landing page mobile / tablet background](https://unsplash.com/@actionvance)
 
-[planets official images by NASA](https://unsplash.com/@nasa)
+[official planetary images from NASA](https://unsplash.com/@nasa)
