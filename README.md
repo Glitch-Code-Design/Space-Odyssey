@@ -6,4 +6,4 @@ Credits: <br>
 
 [landing page mobile / tablet background](https://unsplash.com/@actionvance)
 
-[solar system icons](https://pixabay.com/users/paulocvs-17110386/)
+[planets official images by NASA](https://unsplash.com/@nasa)
