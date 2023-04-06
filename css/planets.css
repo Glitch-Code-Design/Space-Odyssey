@@ -364,7 +364,73 @@ body {
 /*solar system end*/
 
 /*planetary cards start*/
-
+.planetary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 25px;
+}
+.card-contents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card .front,
+.card .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.card {
+    width: 350px;
+    height: 450px;
+    color: var(--font);
+    border: var(--font) 2px solid;
+    margin: 0 auto;
+}
+.card:hover .card-contents {
+    transform: rotateY(180deg);
+}
+.card .front img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.card .front h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.card .front p,
+.card .back p {
+    padding: .5rem;
+    margin: 0 auto;
+}
+.card .front button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    text-transform: capitalize;
+    width: 110px;
+    padding: .25rem;
+    border: var(--font) 1.5px solid;
+    background: transparent;
+    color: var(--font);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card .back {
+    background: var(--background);
+    color: var(--font);
+    transform: rotateY(180deg);
+}
 /*planetary cards end*/
 /*main end*/
 
