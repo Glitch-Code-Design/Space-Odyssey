@@ -7,15 +7,15 @@
 :root {
     --background: #090917;
     --font: #f3eeee;
-    --sun: #ec7819;
-    --mercury: #d7cdbc;
-    --venus: #0063d4;
-    --earth: #5dbeff;
-    --mars: #ea7867;
-    --jupiter: #eb3fd1;
-    --saturn: #099ec3;
-    --uranus: #9e3bf4;
-    --neptune: #10c9f7;
+    --sun: #cc6723;
+    --mercury: #8f8f8f;
+    --venus: #5b6771;
+    --earth: #5d64a3;
+    --mars: #dfc0a1;
+    --jupiter: #bd9260;
+    --saturn: #d4b776;
+    --uranus: #b6d2ef;
+    --neptune: #0072a8;
 }
 body {
     width: 100%;
@@ -369,7 +369,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    margin: 50px auto 25px;
+    margin: 70px auto 20px;
+    grid-gap: 1.5rem;
 }
 .card-contents {
     position: relative;
@@ -378,58 +379,93 @@ body {
     transition: transform 1s;
     transform-style: preserve-3d;
 }
-.card .front,
-.card .back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-}
 .card {
-    width: 350px;
+    margin: 0 auto;
+    width: 320px;
     height: 450px;
     color: var(--font);
     border: var(--font) 2px solid;
-    margin: 0 auto;
+    transition: 250ms ease-in-out;
 }
-.card:hover .card-contents {
-    transform: rotateY(180deg);
+.card:nth-child(1):hover {
+    border: var(--mercury) 2px solid;
+    box-shadow: 0 0 2px var(--mercury),
+                0 0 5px var(--mercury),
+                0 0 10px var(--mercury),
+                0 0 20px var(--mercury);
 }
-.card .front img {
+.card:nth-child(2):hover {
+    border: var(--venus) 2px solid;
+    box-shadow: 0 0 2px var(--venus),
+                0 0 5px var(--venus),
+                0 0 10px var(--venus),
+                0 0 20px var(--venus);
+}
+.card:nth-child(3):hover {
+    border: var(--earth) 2px solid;
+    box-shadow: 0 0 2px var(--earth),
+                0 0 5px var(--earth),
+                0 0 10px var(--earth),
+                0 0 20px var(--earth);
+}
+.card:nth-child(4):hover {
+    border: var(--mars) 2px solid;
+    box-shadow: 0 0 2px var(--mars),
+                0 0 5px var(--mars),
+                0 0 10px var(--mars),
+                0 0 20px var(--mars);
+}
+.card:nth-child(5):hover {
+    border: var(--sun) 2px solid;
+    box-shadow: 0 0 2px var(--sun),
+                0 0 5px var(--sun),
+                0 0 10px var(--sun),
+                0 0 20px var(--sun);
+}
+.card:nth-child(6):hover {
+    border: var(--jupiter) 2px solid;
+    box-shadow: 0 0 2px var(--jupiter),
+                0 0 5px var(--jupiter),
+                0 0 10px var(--jupiter),
+                0 0 20px var(--jupiter);
+}
+.card:nth-child(7):hover {
+    border: var(--saturn) 2px solid;
+    box-shadow: 0 0 2px var(--saturn),
+                0 0 5px var(--saturn),
+                0 0 10px var(--saturn),
+                0 0 20px var(--saturn);
+}
+.card:nth-child(8):hover {
+    border: var(--uranus) 2px solid;
+    box-shadow: 0 0 2px var(--uranus),
+                0 0 5px var(--uranus),
+                0 0 10px var(--uranus),
+                0 0 20px var(--uranus);
+}
+.card:nth-child(9):hover {
+    border: var(--neptune) 2px solid;
+    box-shadow: 0 0 2px var(--neptune),
+                0 0 5px var(--neptune),
+                0 0 10px var(--neptune),
+                0 0 20px var(--neptune);
+}
+.card img {
     display: block;
     height: auto;
     width: 100%;
 }
-.card .front h1 {
+.card h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: clamp(1rem, 3vw, 1.4rem);
     letter-spacing: 1px;
     font-weight: 400;
+    margin-top: 1rem;
 }
-.card .front p,
-.card .back p {
+.card p {
     padding: .5rem;
     margin: 0 auto;
-}
-.card .front button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 80px auto;
-    text-transform: capitalize;
-    width: 110px;
-    padding: .25rem;
-    border: var(--font) 1.5px solid;
-    background: transparent;
-    color: var(--font);
-    border-radius: 10px;
-    cursor: pointer;
-}
-.card .back {
-    background: var(--background);
-    color: var(--font);
-    transform: rotateY(180deg);
 }
 /*planetary cards end*/
 /*main end*/
