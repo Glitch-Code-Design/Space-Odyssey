@@ -7,7 +7,20 @@
 :root {
     --background: #090917;
     --font: #f3eeee;
+    --scrollbar: #e8e5e5;
 }
+/*scrollbar start*/
+::-webkit-scrollbar {
+    width: .5rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 15px;
+}
+/*scrollbar end*/
 body {
     width: 100%;
     height: 100vh;

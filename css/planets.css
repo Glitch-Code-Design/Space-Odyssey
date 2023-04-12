@@ -16,7 +16,20 @@
     --saturn: #d4b776;
     --uranus: #b6d2ef;
     --neptune: #0072a8;
+    --scrollbar: #e8e5e5;
 }
+/*scrollbar start*/
+::-webkit-scrollbar {
+    width: .5rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 15px;
+}
+/*scrollbar end*/
 body {
     width: 100%;
     height: 100vh;
@@ -106,31 +119,13 @@ body {
 
 /*main start*/
 /*solar system start*/
-header h1,
-header p {
-    font-weight: 400;
-    text-align: center;
-    opacity: 93%;
-    color: var(--font);
-}
-header h1 {
-    margin: 10px auto;
-    font-size: clamp(1.1rem, 3vw, 1.4rem);
-    font-weight: 400;
-    letter-spacing: 3px;
-    text-align: center;
-    text-transform: uppercase;
-}
-header p {
-    font-size: clamp(1rem, 3vw, 1.1rem);
-}
 .solar-system {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
     width: 100%;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 /*sun start*/
 .sun {
@@ -397,12 +392,30 @@ header p {
 /*neptune end*/
 /*solar system end*/
 
+/*title start*/
+.title h1,
+.title p {
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: .25rem;
+    width: 60%;
+    line-height: 1.8;
+    margin: 30px auto 0;
+    color: var(--font);
+}
+.title h1 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+/*title end*/
+
 /*planetary cards start*/
 .planetary-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
-    margin: 50px auto 40px;
+    margin: 50px auto;
     max-width: 1000px;
 }
 .card-contents {
@@ -486,7 +499,7 @@ header p {
     height: auto;
     width: 100%;
 }
-.card h1 {
+.card h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: clamp(1rem, 3vw, 1.4rem);
@@ -499,10 +512,13 @@ header p {
     margin: 0 auto;
 }
 /*planetary cards end*/
+.padding-bottom {
+    padding-bottom: .5rem;
+}
 /*main end*/
 
 /*media query's start*/
-@media screen and (min-width: 280px) and (max-width: 1368px) and (hover: none) and (pointer: coarse) {
+@media screen and (max-width: 1368px) and (hover: none) and (pointer: coarse) {
     body {
         background-image: url(./img/mobile-bg.webp);
     }
@@ -568,6 +584,175 @@ header p {
         margin: 0 auto;
         text-align: center;
         padding: 1.5rem;
+    }
+}
+@media screen and (max-width: 338px) {
+    .solar-system {
+        display: none;
+    }
+    .title p {
+        width: 90%;
+        text-align: left;
+    }
+    .planetary-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin: 30px auto 0;
+    }
+    .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 339px) and (max-width: 416px) {
+    .sun .planet {
+        height: 30px;
+        width: 30px;
+    }
+    .mercury {
+        height: 70px;
+        width: 70px;
+    }
+    .mercury .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Mercury {
+        0% {
+            transform: rotate(0deg) translate(33px);
+        }
+        100% {
+            transform: rotate(360deg) translate(33px);
+        }
+    }
+    .venus {
+        height: 110px;
+        width: 110px;
+    }
+    .venus .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Venus {
+        0% {
+            transform: rotate(0deg) translate(53px);
+        }
+        100% {
+            transform: rotate(360deg) translate(53px);
+        }
+    }
+    .earth {
+        height: 150px;
+        width: 150px;
+    }
+    .earth .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Earth {
+        0% {
+            transform: rotate(0deg) translate(73px);
+        }
+        100% {
+            transform: rotate(360deg) translate(73px);
+        }
+    }
+    .mars {
+        height: 190px;
+        width: 190px;
+    }
+    .mars .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Mars {
+        0% {
+            transform: rotate(0deg) translate(93px);
+        }
+        100% {
+            transform: rotate(360deg) translate(93px);
+        }
+    }
+    .jupiter {
+        height: 230px;
+        width: 230px;
+    }
+    .jupiter .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Jupiter {
+        0% {
+            transform: rotate(0deg) translate(113px);
+        }
+        100% {
+            transform: rotate(360deg) translate(113px);
+        }
+    }
+    .saturn {
+        height: 270px;
+        width: 270px;
+    }
+    .saturn .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Saturn {
+        0% {
+            transform: rotate(0deg) translate(133px);
+        }
+        100% {
+            transform: rotate(360deg) translate(133px);
+        }
+    }
+    .uranus {
+        height: 310px;
+        width: 310px;
+    }
+    .uranus .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Uranus {
+        0% {
+            transform: rotate(0deg) translate(153px);
+        }
+        100% {
+            transform: rotate(360deg) translate(153px);
+        }
+    }
+    .neptune {
+        height: 350px;
+        width: 350px;
+    }
+    .neptune .planet {
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes planetRotation-Neptune {
+        0% {
+            transform: rotate(0deg) translate(173px);
+        }
+        100% {
+            transform: rotate(360deg) translate(173px);
+        }
+    }
+    .title h1,
+    .title p {
+        width: 90%;
+        text-align: left;
+    }
+    .planetary-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .card p {
+        opacity: 85%;
+        line-height: 1.2;
     }
 }
 /*media query's end*/
