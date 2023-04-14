@@ -7,7 +7,7 @@
 :root {
     --background: #090917;
     --font: #f3eeee;
-    --border: #d3d0d0;
+    --border: #949393;
     --sun: #cc6723;
     --mercury: #8f8f8f;
     --venus: #5b6771;
@@ -572,20 +572,6 @@ body {
         pointer-events: none;
         transition: 300ms;
         z-index: 10;
-    }
-    header h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 100%;
-        line-height: 1.8;
-        margin: 0 auto;
-        text-align: center;
-        padding: 1.5rem;
     }
 }
 @media screen and (max-width: 338px) {
