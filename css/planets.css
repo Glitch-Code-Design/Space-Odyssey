@@ -7,6 +7,7 @@
 :root {
     --background: #090917;
     --font: #f3eeee;
+    --border: #d3d0d0;
     --sun: #cc6723;
     --mercury: #8f8f8f;
     --venus: #5b6771;
@@ -428,7 +429,7 @@ body {
     width: 320px;
     height: 450px;
     color: var(--font);
-    border: var(--font) 2px solid;
+    border: var(--border) 2px solid;
     transition: 250ms ease-in-out;
 }
 .card:nth-child(1):hover {
@@ -510,6 +511,7 @@ body {
 .card p {
     padding: .5rem;
     margin: 0 auto;
+    opacity: 95%;
 }
 /*planetary cards end*/
 .padding-bottom {
@@ -755,4 +757,38 @@ body {
         line-height: 1.2;
     }
 }
+@media screen and (min-width: 417px) and (max-width: 916px) {
+    .title p {
+        width: 95%;
+        text-align: left;
+    }
+    .planetary-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    .card {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .card p {
+        opacity: 85%;
+        line-height: 1.2;
+    }
+}
+@media screen and (min-width: 1368px) {
+    .title p {
+        max-width: 45%;
+    }
+}
+/*landscape media query's start*/
+@media screen and (max-width: 654px) and (orientation: landscape) {
+    .links ul li {
+        padding: 1.5rem;
+    }
+    .solar-system {
+        display: none;
+    }
+}
+/*landscape media query's end*/
 /*media query's end*/
