@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --background: #090917;
     --font: #f3eeee;
@@ -111,7 +110,7 @@ body {
 
 /*gallery start*/
 .gallery {
-    width: 95%;
+    width: 85%;
     height: auto;
     margin: 80px auto;
     padding-bottom: 2rem;
@@ -182,5 +181,21 @@ body {
         pointer-events: none;
         transition: 300ms;
         z-index: 10;
+    }
+}
+@media screen and (max-width: 416px) {
+    .gallery {
+        width: 90%;
+    }
+    .img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width: 417px) and (max-width: 916px) {
+    .gallery {
+        width: 90%;
+    }
+    .img-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
