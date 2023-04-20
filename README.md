@@ -8,6 +8,8 @@ Credits: <br>
 
 [official planetary images from NASA](https://unsplash.com/@nasa)
 
-[Gallery Images - unsplash](https://unsplash.com)
-[Gallery Images - pexels](https://www.pexels.com/)
-[Gallery Images - pixabay](https://pixabay.com/)
+[Gallery Images - Unsplash](https://unsplash.com)
+
+[Gallery Images - Pexels](https://www.pexels.com/)
+
+[Gallery Images - Pixabay](https://pixabay.com/)
