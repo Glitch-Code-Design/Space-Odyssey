@@ -7,3 +7,7 @@ Credits: <br>
 [landing page mobile / tablet background](https://unsplash.com/@actionvance)
 
 [official planetary images from NASA](https://unsplash.com/@nasa)
+
+[Gallery Images - unsplash](https://unsplash.com)
+[Gallery Images - pexels](https://www.pexels.com/)
+[Gallery Images - pixabay](https://pixabay.com/)
