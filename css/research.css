@@ -123,6 +123,7 @@ article h1 {
 article p {
     margin: 10px auto;
     padding: 1rem;
+    line-height: 1.5;
 }
 article .img-container {
     display: flex;
