@@ -197,6 +197,9 @@ body {
         transition: 300ms;
         z-index: 10;
     }
+    .img-container .overlay {
+        display: none;
+    }
 }
 @media screen and (max-width: 416px) {
     .gallery {
