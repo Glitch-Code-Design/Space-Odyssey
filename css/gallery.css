@@ -116,15 +116,30 @@ body {
     padding-bottom: 2rem;
     max-width: 1400px;
 }
-.img-container {
+.img-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: .8rem;
 }
-.img-container img {
+.img-wrapper img {
     border: var(--font) solid 1px;
     width: 100%;
     height: auto;
+}
+.img-container .overlay {
+    display: block;
+    border: var(--font) solid 1px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 2.025rem;
+    text-align: center;
+    background: var(--background);
+    padding: .27rem;
+    color: var(--font);
+}
+.img-container .overlay p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 /*gallery end*/
 
@@ -187,7 +202,7 @@ body {
     .gallery {
         width: 90%;
     }
-    .img-container {
+    .img-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -195,7 +210,7 @@ body {
     .gallery {
         width: 90%;
     }
-    .img-container {
+    .img-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
 }
