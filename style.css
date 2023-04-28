@@ -20,6 +20,16 @@
     background-color: var(--scrollbar);
     border-radius: 15px;
 }
+/*focus start*/
+a:focus {
+    outline: var(--font) 1px solid;
+    padding: .5rem;
+}
+a:focus:not(:focus-visible) {
+    outline: none;
+    padding: 0;
+}
+/*focus end*/
 /*scrollbar end*/
 body {
     width: 100%;

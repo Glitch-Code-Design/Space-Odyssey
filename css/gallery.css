@@ -21,6 +21,16 @@
     border-radius: 15px;
 }
 /*scrollbar end*/
+/*focus start*/
+a:focus {
+    outline: var(--font) 1px solid;
+    padding: .5rem;
+}
+a:focus:not(:focus-visible) {
+    outline: none;
+    padding: 0;
+}
+/*focus end*/
 body {
     width: 100%;
     height: 100vh;
@@ -216,3 +226,4 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/*media query's end*/
