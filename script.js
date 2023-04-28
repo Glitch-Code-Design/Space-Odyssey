@@ -1,6 +1,6 @@
 //hamburger menu & no scroll start//
-const wrapper = document.querySelector('.wrapper');
-const menu = document.querySelector('.hamburger-menu');
+let wrapper = document.querySelector('.wrapper');
+let menu = document.querySelector('.hamburger-menu');
 
 menu.addEventListener('click', () => {
     wrapper.classList.toggle('active')
