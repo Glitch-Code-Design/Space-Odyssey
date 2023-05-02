@@ -1,5 +1,5 @@
 # Space Odyssey
- Website dedicated to the vast expanses of space
+ Website dedicated to space and our attempts to explore it
 
 Image Credits: <br>
 
