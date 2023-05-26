@@ -177,6 +177,7 @@ article .img-container {
         background-image: url(./img/mobile-bg.webp);
     }
     .no-scroll {
+        position: relative;
         overflow-y: hidden;
     }
     .wrapper.active .links {
@@ -198,7 +199,7 @@ article .img-container {
         background-color: var(--background);
         transform: translateY(-100%);
         transition: 300ms;
-        overflow-y: auto;
+        overflow: auto;
         z-index: 15;
     }
     .links ul li {
